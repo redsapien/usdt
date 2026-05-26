@@ -1,2 +1,0 @@
-# usdt
-Web de presentacion
