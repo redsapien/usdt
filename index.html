@@ -3,148 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Ecosistema Luis | Resguardo USDT</title>
+    <title>User Experience Architecture | Luis & Socio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --red-sapien: #D32F2F;
-            --tether-green: #26A17B;
-        }
-        body {
-            background-color: #070a12;
-            color: #ffffff;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        :root { --red-sapien: #E53E3E; --tether-green: #00CC88; }
+        body { 
+            background-color: #040712;
+            color: #f3f4f6;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-image: radial-gradient(rgba(229, 62, 62, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
             -webkit-tap-highlight-color: transparent;
         }
-        /* Efecto Cristal Esmeralda Premium */
-        .glass-card {
-            background: rgba(17, 24, 39, 0.7);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+        .ui-card {
+            background: linear-gradient(145deg, rgba(20, 12, 12, 0.6) 0%, rgba(10, 10, 15, 0.7) 100%);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 62, 62, 0.12);
+            box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.6);
         }
-        /* Brillo Cripto Activo */
-        .glow-green:active, .glow-green:focus {
-            box-shadow: 0 0 25px rgba(38, 161, 123, 0.4);
-        }
-        /* Ocultar barra de scroll para estética app */
-        ::-webkit-scrollbar { display: none; }
+        .font-heading { font-family: 'Space Grotesk', sans-serif; }
     </style>
 </head>
-<body class="overflow-x-hidden antialiased selection:bg-[--tether-green]">
+<body class="py-12 px-4 md:px-8 max-w-5xl mx-auto overflow-x-hidden antialiased">
 
-    <section class="min-h-[90vh] flex flex-col justify-between p-6 relative">
-        <div class="flex justify-between items-center w-full pt-2 reveal-top">
-            <span class="text-[10px] font-mono tracking-widest text-[#D32F2F] font-bold uppercase bg-red-950/40 px-3 py-1.5 rounded-full border border-red-900/30">
-                Red Sapien // Dev Core
-            </span>
-            <div class="w-2.5 h-2.5 rounded-full bg-[--tether-green] animate-pulse"></div>
-        </div>
+    <header class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <span class="text-[10px] tracking-[0.2em] font-bold text-[--red-sapien] uppercase bg-red-500/10 px-4 py-2 rounded-full border border-red-500/20 font-heading">
+            SAPIEN CORE // SPECIFICATION SHEET
+        </span>
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white mt-6 uppercase font-heading">
+            Arquitectura de Conversión del Cliente
+        </h1>
+        <div class="w-12 h-0.5 bg-[--red-sapien] mx-auto mt-4"></div>
+        <p class="text-xs md:text-sm text-gray-400 mt-4 leading-relaxed font-light">
+            Esquema detallado del flujo interactivo y técnico que experimentará el usuario final en su dispositivo móvil al interactuar con el ecosistema.
+        </p>
+    </header>
 
-        <div class="my-auto space-y-5 reveal-left">
-            <h1 class="text-4xl font-black tracking-tight leading-[1.1] text-white">
-                EL CICLO <br>
-                <span class="text-[--tether-green] text-5xl">TURBO USDT</span>
-            </h1>
-            <p class="text-base text-gray-400 max-w-sm font-light leading-relaxed">
-                Protege tu capital de la inflación local. Entras con tu plan, conectas a 2 amigos por WhatsApp y aseguras el <span class="text-white font-bold underline decoration-[--tether-green] decoration-2">150% de retorno directo</span>.
-            </p>
-        </div>
-
-        <div class="w-full space-y-4 pb-4 reveal-bottom">
-            <a href="#video-seccion" class="block text-center w-full bg-[--tether-green] text-white py-4 rounded-2xl font-bold text-base active:scale-[0.98] transition-all shadow-lg shadow-emerald-950/50 glow-green">
-                Comenzar Ciclo Ahora
-            </a>
-            <p class="text-center text-[11px] text-gray-500 font-mono">Desliza para ver la fórmula en 59s ↓</p>
-        </div>
-    </section>
-
-    <section id="video-seccion" class="min-h-screen p-6 bg-[#0c111d] flex flex-col justify-center space-y-6">
+    <main class="grid md:grid-cols-3 gap-6 mb-12">
         
-        <div class="glass-card rounded-2xl p-3 shadow-2xl reveal-bottom">
-            <div class="w-full aspect-video rounded-xl bg-black flex flex-col items-center justify-center relative overflow-hidden border border-gray-800">
-                <span class="text-4xl bg-white/10 p-4 rounded-full backdrop-blur-md active:scale-95 transition-transform">▶️</span>
-                <span class="absolute bottom-3 left-3 text-[10px] font-mono text-gray-400 bg-black/60 px-2 py-1 rounded">Voz en OFF // 59 Segundos</span>
-            </div>
-        </div>
-
-        <div class="glass-card rounded-2xl p-6 shadow-2xl space-y-5 reveal-bottom">
-            <div class="space-y-1">
-                <h3 class="text-lg font-bold">Registro Inteligente</h3>
-                <p class="text-xs text-gray-400">Sin contraseñas. Acceso directo y blindado.</p>
-            </div>
-
-            <form class="space-y-4" id="formMvp">
-                <button type="button" class="w-full flex items-center justify-center gap-3 bg-white text-black py-3.5 rounded-xl font-bold text-sm active:bg-gray-200 transition-all shadow-md">
-                    <img src="https://www.google.com/favicon.ico" class="w-4" alt="Google"> Entrar con Gmail
-                </button>
-
-                <div class="flex items-center text-gray-700 text-[10px] uppercase font-mono tracking-wider">
-                    <div class="flex-grow border-t border-gray-800/60"></div>
-                    <span class="px-3 text-gray-500">O datos directos</span>
-                    <div class="flex-grow border-t border-gray-800/60"></div>
+        <div class="ui-card rounded-3xl p-6 flex flex-col justify-between relative border-t-2 border-[--tether-green] reveal">
+            <div class="space-y-4">
+                <div class="flex justify-between items-start">
+                    <span class="text-3xl">📱</span>
+                    <span class="text-[10px] font-mono text-gray-500 font-bold bg-white/5 px-2 py-1 rounded">MÓDULO 01</span>
                 </div>
+                <h3 class="font-bold text-lg text-white tracking-tight font-heading uppercase">01. UI Premium Tether</h3>
+                <p class="text-xs text-gray-400 leading-relaxed font-light">
+                    El tráfico proveniente de las campañas de Meta aterriza en una interfaz optimizada "Mobile-First" en modo oscuro. El embudo elimina la fricción operativa mediante un **video instructivo integrado de 59 segundos (Voz en OFF)** que educa al visitante. El acceso se ejecuta a través de un **Single Sign-On (SSO) de Google**, permitiendo el registro express con un solo clic, capturando de forma segura su correo y credenciales sin necesidad de contraseñas.
+                </p>
+            </div>
+        </div>
 
-                <input type="tel" placeholder="Tu WhatsApp (Ej: +57...)" required class="w-full bg-[#070a12] border border-gray-800 rounded-xl p-3.5 text-sm text-white focus:border-[--tether-green] outline-none transition-colors">
-                <input type="text" placeholder="Billetera USDT (Red BEP20)" required class="w-full bg-[#070a12] border border-gray-800 rounded-xl p-3.5 text-sm text-white focus:border-[--tether-green] outline-none transition-colors">
-                <input type="text" id="sponsorInput" class="w-full bg-gray-900/50 border border-gray-800/50 rounded-xl p-3.5 text-xs text-gray-500 font-mono outline-none" readonly>
+        <div class="ui-card rounded-3xl p-6 flex flex-col justify-between relative border-t-2 border-[--red-sapien] reveal">
+            <div class="space-y-4">
+                <div class="flex justify-between items-start">
+                    <span class="text-3xl">🔗</span>
+                    <span class="text-[10px] font-mono text-gray-500 font-bold bg-white/5 px-2 py-1 rounded">MÓDULO 02</span>
+                </div>
+                <h3 class="font-bold text-lg text-white tracking-tight font-heading uppercase">02. Panel de Viralización</h3>
+                <p class="text-xs text-gray-400 leading-relaxed font-light">
+                    Al validar el ingreso, el backend genera dinámicamente un **Link Único de Referido** cifrado para el usuario. La interfaz del cliente cuenta con un botón de acción masiva nativo para **Telegram**. Al presionarlo, el sistema levanta la API de la aplicación móvil del usuario e inyecta directamente su enlace de invitación personalizado en sus chats y canales de difusión, automatizando la tracción orgánica de sus contactos.
+                </p>
+            </div>
+        </div>
 
-                <button type="submit" class="w-full bg-[#D32F2F] text-white py-4 rounded-xl font-bold text-sm active:bg-red-700 transition-colors shadow-lg">
-                    Ver Planes Disponibles ↓
-                </button>
-            </form>
+        <div class="ui-card rounded-3xl p-6 flex flex-col justify-between relative border-t-2 border-blue-500 reveal">
+            <div class="space-y-4">
+                <div class="flex justify-between items-start">
+                    <span class="text-3xl">👥</span>
+                    <span class="text-[10px] font-mono text-gray-500 font-bold bg-white/5 px-2 py-1 rounded">MÓDULO 03</span>
+                </div>
+                <h3 class="font-bold text-lg text-white tracking-tight font-heading uppercase">03. Networking Cerrado</h3>
+                <p class="text-xs text-gray-400 leading-relaxed font-light">
+                    El Dashboard del cliente integra accesos directos e instantáneos a sesiones corporativas síncronas de **Zoom** para presentaciones de negocio. Adicionalmente, se conecta con un entorno de comunicación y soporte técnico privado **estilo Slack / Teams**. Este canal es intuitivo, libre de publicidad externa y estructurado en dos simples pasos de onboarding, garantizando que el usuario se incorpore a la comunidad de inmediato y mantenga un alto nivel de actividad.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="ui-card rounded-3xl p-6 md:p-8 border border-yellow-500/20 bg-yellow-500/5 max-w-4xl mx-auto mb-12 reveal">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div class="space-y-2 max-w-2xl">
+                <div class="text-xs font-bold text-yellow-500 font-heading tracking-wider flex items-center gap-2 uppercase">
+                    <span>⚙️</span> Optimización de Costos Operativos de Infraestructura
+                </div>
+                <p class="text-xs text-gray-300 leading-relaxed font-light">
+                    El procesamiento automatizado de datos (Webhooks de Gmail, bases de datos relacionales en Google Sheets y lógica de enrutamiento) se ejecuta sobre el motor de **Make**. Para mitigar costos fijos durante la fase de lanzamiento, el sistema arranca con un beneficio de **1.000 operaciones mensuales o el primer mes completamente gratis**, asegurando la validación completa del volumen de usuarios inicial. 
+                </p>
+                <p class="text-xs text-gray-300 leading-relaxed font-light">
+                    Una vez completada la fase de levantamiento de capital orgánico y al escalar el tráfico masivo mediante campañas pagas, el mantenimiento global de la infraestructura en la nube requerirá únicamente una suscripción base de **$9 USD mensuales**.
+                </p>
+            </div>
+            
+            <div class="flex md:flex-col gap-4 w-full md:w-auto text-center font-heading">
+                <div class="bg-black/50 border border-white/5 p-4 rounded-2xl flex-1 md:w-36">
+                    <div class="text-xl font-bold text-white">1,000</div>
+                    <div class="text-[8px] text-gray-500 uppercase tracking-widest mt-1">Usos Gratis</div>
+                </div>
+                <div class="bg-black/50 border border-white/5 p-4 rounded-2xl flex-1 md:w-36">
+                    <div class="text-xl font-bold text-[--tether-green]">$9 USD</div>
+                    <div class="text-[8px] text-gray-500 uppercase tracking-widest mt-1">Nube / Mes</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="min-h-screen p-6 flex flex-col justify-between py-12">
-        <div class="space-y-2 reveal-bottom">
-            <h2 class="text-2xl font-black tracking-tight">Selecciona tu Nivel</h2>
-            <p class="text-xs text-gray-400">Cada plan activa tu nodo en la base de datos de forma inmediata.</p>
+    <footer class="ui-card rounded-3xl bg-gradient-to-r from-red-950/40 via-red-900/20 to-transparent p-6 text-center md:text-left md:flex justify-between items-center max-w-4xl mx-auto border-none reveal">
+        <div class="space-y-1 mb-4 md:mb-0">
+            <div class="text-base font-extrabold tracking-wide text-white uppercase font-heading">PROCESAMIENTO INTERNO ACTIVO</div>
+            <p class="text-xs text-red-200/70 font-light">Compilando arquitectura técnica sobre la plantilla modular universal de alta velocidad.</p>
         </div>
-
-        <div class="grid grid-cols-2 gap-4 my-auto reveal-bottom">
-            <div class="glass-card p-5 rounded-2xl text-center active:border-[--tether-green] transition-all border border-gray-800">
-                <span class="text-[10px] font-mono text-gray-500 uppercase tracking-wider block mb-1">Starter</span>
-                <div class="text-2xl font-black">$25 <span class="text-xs font-normal text-gray-400">USDT</span></div>
-                <div class="text-[10px] text-[--tether-green] mt-3 bg-emerald-950/30 py-1 rounded-md font-mono">Retorna: $37.5</div>
-            </div>
-            <div class="glass-card p-5 rounded-2xl text-center border-2 border-[--tether-green] bg-emerald-950/10">
-                <span class="text-[10px] font-mono text-[--tether-green] uppercase tracking-wider block mb-1 font-bold">Popular</span>
-                <div class="text-2xl font-black text-white">$100 <span class="text-xs font-normal text-gray-400">USDT</span></div>
-                <div class="text-[10px] text-[--tether-green] mt-3 bg-emerald-950/50 py-1 rounded-md font-mono font-bold">Retorna: $150</div>
-            </div>
-            <div class="glass-card p-5 rounded-2xl text-center active:border-[--tether-green] transition-all border border-gray-800">
-                <span class="text-[10px] font-mono text-gray-500 uppercase tracking-wider block mb-1">Advanced</span>
-                <div class="text-2xl font-black">$250 <span class="text-xs font-normal text-gray-400">USDT</span></div>
-                <div class="text-[10px] text-[--tether-green] mt-3 bg-emerald-950/30 py-1 rounded-md font-mono">Retorna: $375</div>
-            </div>
-            <div class="glass-card p-5 rounded-2xl text-center active:border-[--tether-green] transition-all border border-gray-800">
-                <span class="text-[10px] font-mono text-gray-500 uppercase tracking-wider block mb-1">VIP Core</span>
-                <div class="text-2xl font-black">$1,000 <span class="text-xs font-normal text-gray-400">USDT</span></div>
-                <div class="text-[10px] text-[--tether-green] mt-3 bg-emerald-950/30 py-1 rounded-md font-mono">Retorna: $1,500</div>
-            </div>
+        <div class="bg-[--red-sapien] text-white px-6 py-3 rounded-xl font-heading text-xs font-bold tracking-widest uppercase shadow-lg shadow-red-950/50">
+            ENTREGA: MAÑANA // 18:00 COP
         </div>
-
-        <div class="text-center space-y-2 pt-6 reveal-bottom">
-            <p class="text-[10px] text-gray-600 font-mono">Red Sapien Labs // Entrega MVP 24 Horas</p>
-            <div class="w-20 h-1 bg-gray-800 mx-auto rounded-full"></div> </div>
-    </section>
+    </footer>
 
     <script>
-        // Captura el código de referido de la URL de forma limpia
-        const urlParams = new URLSearchParams(window.location.search);
-        document.getElementById('sponsorInput').value = "ID Invitación: " + (urlParams.get('ref') || "ADMIN_MASTER");
-
-        // Configuración de animaciones Mobile-First (Ultra rápidas y ligeras)
-        ScrollReveal().reveal('.reveal-top', { delay: 100, distance: '20px', origin: 'top', duration: 800, opacity: 0 });
-        ScrollReveal().reveal('.reveal-left', { delay: 150, distance: '30px', origin: 'left', duration: 900, opacity: 0 });
-        ScrollReveal().reveal('.reveal-bottom', { delay: 200, distance: '40px', origin: 'bottom', duration: 1000, opacity: 0, interval: 100 });
-
-        // Manejo del Submit básico para evitar recargas erróneas en móvil
-        document.getElementById('formMvp').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Enrutando datos al motor de Make...');
+        // Animaciones de flujo continuo optimizadas para hardware móvil
+        ScrollReveal().reveal('.reveal', { 
+            delay: 100, 
+            distance: '20px', 
+            origin: 'bottom', 
+            duration: 700,
+            opacity: 0,
+            scale: 0.99,
+            easing: 'ease-out'
         });
     </script>
 </body>
